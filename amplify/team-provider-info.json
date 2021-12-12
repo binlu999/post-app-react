@@ -16,5 +16,29 @@
         "postappapibbe843bd": {}
       }
     }
+  },
+  "sit": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-postappapi-sit-211809-authRole",
+      "UnauthRoleArn": "arn:aws:iam::847380577073:role/amplify-postappapi-sit-211809-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::847380577073:role/amplify-postappapi-sit-211809-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-postappapi-sit-211809-deployment",
+      "UnauthRoleName": "amplify-postappapi-sit-211809-unauthRole",
+      "StackName": "amplify-postappapi-sit-211809",
+      "StackId": "arn:aws:cloudformation:us-east-1:847380577073:stack/amplify-postappapi-sit-211809/f9ceea60-5a30-11ec-9dd5-0a4d5833371f",
+      "AmplifyAppId": "dn8i3lm15kq4n"
+    },
+    "categories": {
+      "auth": {
+        "postappapibbe843bd": {}
+      },
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "dn8i3lm15kq4n",
+          "type": "cicd"
+        }
+      }
+    }
   }
 }

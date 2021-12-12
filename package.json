@@ -3,12 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "aws-amplify": "^1.1.40",
-    "aws-amplify-react": "^2.4.4",
-    "aws-sdk": "^2.1040.0",
-    "react": "^16.9.0",
-    "react-dom": "^16.9.0",
-    "react-icons": "^3.7.0",
+    "aws-amplify": "1.1.40",
+    "aws-amplify-react": "2.4.4",
+    "aws-sdk": "2.1040.0",
+    "react": "16.9.0",
+    "react-dom": "16.9.0",
+    "react-icons": "3.7.0",
     "react-scripts": "3.1.1"
   },
   "scripts": {
