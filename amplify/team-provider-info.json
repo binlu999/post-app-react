@@ -1,43 +1,25 @@
 {
   "dev": {
     "awscloudformation": {
-      "AuthRoleName": "amplify-postappapi-dev-143621-authRole",
-      "UnauthRoleArn": "arn:aws:iam::847380577073:role/amplify-postappapi-dev-143621-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::847380577073:role/amplify-postappapi-dev-143621-authRole",
+      "AuthRoleName": "amplify-postappapi-dev-104917-authRole",
+      "UnauthRoleArn": "arn:aws:iam::847380577073:role/amplify-postappapi-dev-104917-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::847380577073:role/amplify-postappapi-dev-104917-authRole",
       "Region": "us-east-1",
-      "DeploymentBucketName": "amplify-postappapi-dev-143621-deployment",
-      "UnauthRoleName": "amplify-postappapi-dev-143621-unauthRole",
-      "StackName": "amplify-postappapi-dev-143621",
-      "StackId": "arn:aws:cloudformation:us-east-1:847380577073:stack/amplify-postappapi-dev-143621/5adbc230-52e6-11ec-b98a-0a975ef1459f",
-      "AmplifyAppId": "d2dn2tpbhxqlpp"
+      "DeploymentBucketName": "amplify-postappapi-dev-104917-deployment",
+      "UnauthRoleName": "amplify-postappapi-dev-104917-unauthRole",
+      "StackName": "amplify-postappapi-dev-104917",
+      "StackId": "arn:aws:cloudformation:us-east-1:847380577073:stack/amplify-postappapi-dev-104917/9e6de620-5c34-11ec-9d6d-0ee15019571d",
+      "AmplifyAppId": "d1mu4tvu5lhw65"
     },
     "categories": {
-      "auth": {
-        "postappapibbe843bd": {}
-      }
-    }
-  },
-  "sit": {
-    "awscloudformation": {
-      "AuthRoleName": "amplify-postappapi-sit-211809-authRole",
-      "UnauthRoleArn": "arn:aws:iam::847380577073:role/amplify-postappapi-sit-211809-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::847380577073:role/amplify-postappapi-sit-211809-authRole",
-      "Region": "us-east-1",
-      "DeploymentBucketName": "amplify-postappapi-sit-211809-deployment",
-      "UnauthRoleName": "amplify-postappapi-sit-211809-unauthRole",
-      "StackName": "amplify-postappapi-sit-211809",
-      "StackId": "arn:aws:cloudformation:us-east-1:847380577073:stack/amplify-postappapi-sit-211809/f9ceea60-5a30-11ec-9dd5-0a4d5833371f",
-      "AmplifyAppId": "dn8i3lm15kq4n"
-    },
-    "categories": {
-      "auth": {
-        "postappapibbe843bd": {}
-      },
       "hosting": {
         "amplifyhosting": {
-          "appId": "dn8i3lm15kq4n",
+          "appId": "d1mu4tvu5lhw65",
           "type": "cicd"
         }
+      },
+      "auth": {
+        "postappapibbe843bd": {}
       }
     }
   }

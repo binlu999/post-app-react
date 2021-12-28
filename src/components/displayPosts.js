@@ -3,9 +3,10 @@ import { listPosts } from "../graphql/queries";
 import { API, graphqlOperation } from 'aws-amplify';
 import DeletePost from "./deletePost";
 import EditPost from "./editPost";
-import {onCreateComment, onCreatePost, onDeletePost, onUpdatePost} from '../graphql/subscriptions'
+import {onCreateComment, onCreateLike, onCreatePost, onDeletePost, onUpdatePost} from '../graphql/subscriptions'
 import CreateComponentPost from "./createCommentPost";
 import CommentPost from "./commentPost";
+import { FaThumbsUp } from 'react-icons/fa';
 
 class DisplayPosts extends Component{
     state={
@@ -62,6 +63,19 @@ class DisplayPosts extends Component{
 
             }
         });
+        this.likePostCreateListener = API.graphql(graphqlOperation(onCreateLike))
+        .subscribe({
+            next:postData =>{
+                const createdLike=postData.value.data.onCreateLike;
+                let posts = [...this.state.posts];
+                for(let post of posts){
+                    if(createdLike.post.id===post.id){
+                        post.likes.items.push(createdLike);
+                    }
+                }
+                this.setState({posts:posts});
+            }
+        })
     }
 
     componentWillUnmount = async ()=>{
@@ -110,6 +124,7 @@ class DisplayPosts extends Component{
                         )
                     }
                 </span>
+                <FaThumbsUp />
                 </div>
                 
             );
